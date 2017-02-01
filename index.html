@@ -7,6 +7,14 @@
     src="https://code.jquery.com/jquery-3.1.1.js"
     integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
     crossorigin="anonymous"></script>
+	
+	<script type="text/javascript">
+		$(function(){
+			$('.expand > li a').click(function(){
+				$(this).parent().find('li').toggle();
+			});
+		});
+	</script>
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <style type="text/css">
         html{
@@ -95,7 +103,6 @@
                       <li><a id="acad">Academics</a></li>
                       <li><a id="cv">Curriculam Vitae</a></li>
                       <li><a id="research">Research Interest</a></li>
-                      <li><a id="thesis">My thesis Supervisor</a></li>
                       <li><a id="conf">Conferences and Seminars</a></li>
                       <li><a id="maths">Mathematics 2 Philosophy</a></li>
                       <li><a id="ima">Indian Military Academy</a></li>
@@ -112,12 +119,18 @@
           </div>
           <div id="iadv">
             <nav>
-              <ul>
-                <li><a >Home</a></li>
-                <li><a >About</a></li>
-                <li><a >Clients</a></li>
-                <li><a >Contact Us</a></li>
-            </ul>
+				<ol class="expand">
+					<li id="appl" style="margin: 10px 0;"><a>Relevant Links</a>
+							<ol id="control" style="margin: 10px 0;">
+								<li id="applitem1">
+									<a href="http://home.iitk.ac.in/~cat/" target="_blank">My thesis Supervisor</a>
+								</li>
+								<li id="applitem1">
+									<a href="http://newwebmail.iitk.ac.in/" target="_blank" >Webmail</a>
+								</li>
+							</ol>
+					</li>
+				</ol>
         </nav>
 
     </div>
@@ -139,9 +152,6 @@
     });
     $("#research").click(function(){
         $("#icontent").load('pages/research.html');
-    });
-    $("#thesis").click(function(){
-        $("#icontent").load('http://home.iitk.ac.in/~cat/');
     });
     $("#conf").click(function(){
         $("#icontent").load('pages/conf.html');
