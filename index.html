@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage of Sumanta Sarathi Sharma</title>
+    <link rel="icon" href="https://lh5.googleusercontent.com/-H0u2V21gN7o/AAAAAAAAAAI/AAAAAAAAASc/VjTGiLdFrzg/photo.jpg" type="image/jpg">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <style type="text/css">
+        html{
+            background: url(https://static.pexels.com/photos/1954/black-and-white-lights-abstract-curves.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: #ffffff;
+        }
+        #tbody{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        #iheader{
+            flex-shrink: 0;
+            position: fixed;
+            top: 0%;
+            width: 100%;
+            height: 10%;
+        }
+        #ifooter{
+            flex-shrink: 0;
+            position: fixed;
+            top: 90%;
+            width: 100%;
+            height: 10%;
+        }
+        #ibody{
+            display: flex;
+            flex-direction: row;
+            flex-shrink: 1;
+            position: fixed;
+            top: 10%;
+            width: 100%;
+            height: 80%
+        }
+        #inav{
+            width: 12.5%;
+            overflow: auto;
+        }
+        #inav li{
+            list-style: none;
+        }
+        #iadv li{
+            list-style: none;
+        }
+        #icontent{
+            width: 75%;
+            overflow: auto;
+        }
+        #iadv{
+            width: 12.5%;
+            overflow: auto;
+        }
+        a{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="tbody">
+        <div id="iheader">
+            <h1>
+                IIT Kanpur
+            </h1>
+            <h4>
+                Sharma Sumanta Sarathi, Research Fellow, Philosophy
+            </h4>
+            <hr/>
+        </div>
+        <div id="ibody">
+            <div id="inav">
+                <nav>
+                  <ul>
+                      <li><a id="about">About Me</a></li>
+                      <li><a id="acad">Academics</a></li>
+                      <li><a id="cv">Curriculam Vitae</a></li>
+                      <li><a id="reserch">Research Interest</a></li>
+                      <li><a id="thesis">My thesis Supervisor</a></li>
+                      <li><a id="conf">Conferences and Seminars</a></li>
+                      <li><a id="maths">Mathematics 2 Philosophy</a></li>
+                      <li><a id="ima">Indian Military Academy</a></li>
+                      <li><a id="cca">Co-Curricular Activities</a></li>
+                      <li><a id="town">My Hown Town</a></li>
+                      <li><a id="pg">Picture Gallery</a></li>
+                      <li><a id="parents">My Parents</a></li>
+                      <li><a id="">Webmail</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div id="icontent">
+
+          </div>
+          <div id="iadv">
+            <nav>
+              <ul>
+                <li><a >Home</a></li>
+                <li><a >About</a></li>
+                <li><a >Clients</a></li>
+                <li><a >Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<div id="ifooter">
+    <hr/>
+    FB, VI Floor |Department of Humanities &amp; Social Sciences |IIT Kanpur |U.P. |208016 |INDIA |Phone +91-512-259-7612, +91-512-259-7510(F)
+</div>
+</div>
+<script type="text/javascript">
+    $("#ihome").click(function(){
+        $("#icontent").load('pages/about.html');
+    });
+    $(document).ready( function(){
+        $("#icontent").load('pages/about.html');
+    });
+</script>
+</body>
+</html>
