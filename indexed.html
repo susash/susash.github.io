@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage of Sumanta Sarathi Sharma</title>
+    <link rel="icon" href="https://lh5.googleusercontent.com/-H0u2V21gN7o/AAAAAAAAAAI/AAAAAAAAASc/VjTGiLdFrzg/photo.jpg" type="image/jpg">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+	
+	<script type="text/javascript">
+		$(function(){
+			$('.expand > li a').click(function(){
+				$(this).parent().find('li').toggle();
+			});
+		});
+	</script>
+  <style type="text/css">
+    @-webkit-keyframes blink {
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  @-moz-keyframes blink {
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  @keyframes blink {
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  #typed-cursor{
+    font-size: 100px;
+      opacity: 1;
+      font-weight: 100;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation: blink 0.7s infinite;
+      animation: blink 0.7s infinite;
+  }
+span.text-change {
+    color: black;
+    font-size: 100px;
+}
+</style>
+    <style type="text/css">
+        html{
+            background: url(https://static.pexels.com/photos/1954/black-and-white-lights-abstract-curves.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: #ffffff;
+        }
+        hr{
+			border: 0;
+    		height: 1px;
+    		background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+		}
+        #tbody{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        #iheader{
+            flex-shrink: 0;
+            position: fixed;
+            top: 0%;
+            width: 100%;
+            height: 15%;
+        }
+        #ifooter{
+            flex-shrink: 0;
+            position: fixed;
+            top: 90%;
+            width: 100%;
+            height: 10%;
+        }
+        #ibody{
+            display: flex;
+            flex-direction: row;
+            flex-shrink: 1;
+            position: fixed;
+            top: 15%;
+            width: 100%;
+            height: 75%
+        }
+        #inav{
+            width: 12.5%;
+            overflow: auto;
+        }
+        #inav li{
+            list-style: none;
+        }
+        #iadv li{
+            list-style: none;
+        }
+	 li{
+		margin: 16px 0;
+	}
+        #icontent{
+            width: 75%;
+            overflow: auto;
+        }
+        #iadv{
+            width: 12.5%;
+            overflow: auto;
+        }
+        a{
+            cursor: pointer;
+	    color: inherit;
+            text-decoration: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div id="tbody">
+        <div id="iheader">
+            <h1>
+                IIT Kanpur
+            </h1>
+            <h4>
+                Sharma Sumanta Sarathi, <span class="text-change"></span>Research Fellow, Philosophy
+            </h4>
+            <hr/>
+        </div>
+        <div id="ibody">
+            <div id="inav">
+                <nav>
+                  <ul>
+                      <li><a id="about">About Me</a></li>
+                      <li><a id="acad">Academics</a></li>
+                      <li><a id="cv">Curriculam Vitae</a></li>
+                      <li><a id="research">Research Interest</a></li>
+                      <li><a id="conf">Conferences and Seminars</a></li>
+                      <li><a id="maths">Mathematics 2 Philosophy</a></li>
+                      <li><a id="ima">Indian Military Academy</a></li>
+                      <li><a id="cca">Co-Curricular Activities</a></li>
+                      <li><a id="town">My Hown Town</a></li>
+                      <li><a id="pg">Picture Gallery</a></li>
+                      <li><a id="parents">My Parents</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div id="icontent">
+
+          </div>
+          <div id="iadv">
+            <nav>
+				<ol class="expand">
+					<li id="appl" style="margin: 10px 0;"><a>Relevant Links</a>
+							<ol id="control">
+								<li id="applitem1">
+									<a href="http://home.iitk.ac.in/~cat/" target="_blank">My Thesis Supervisor</a>
+								</li>
+								<li id="applitem1">
+									<a href="http://newwebmail.iitk.ac.in/" target="_blank" >Webmail</a>
+								</li>
+							</ol>
+					</li>
+				</ol>
+        </nav>
+
+    </div>
+</div>
+<div id="ifooter">
+    <hr/>
+    FB, VI Floor |Department of Humanities &amp; Social Sciences |IIT Kanpur |U.P. |208016 |INDIA |Phone +91-512-259-7612, +91-512-259-7510(F)
+</div>
+</div>
+<script type="text/javascript">
+    $("#about").click(function(){
+        $("#icontent").load('pages/about.html');
+    });
+     $("#acad").click(function(){
+        $("#icontent").load('pages/acad.html');
+    });
+    $("#cv").click(function(){
+        $("#icontent").load('pages/cv.html');
+    });
+    $("#research").click(function(){
+        $("#icontent").load('pages/research.html');
+    });
+    $("#conf").click(function(){
+        $("#icontent").load('pages/conf.html');
+    });
+    $("#maths").click(function(){
+        $("#icontent").load('pages/maths.html');
+    });
+    $("#ima").click(function(){
+        $("#icontent").load('pages/ima.html');
+    });
+    $("#town").click(function(){
+        $("#icontent").load('pages/town.html');
+    });
+    $("#cca").click(function(){
+        $("#icontent").load('pages/cca.html');
+    });
+    $("#parents").click(function(){
+        $("#icontent").load('pages/parents.html');
+    });
+    $(document).ready( function(){
+        $("#icontent").load('pages/about.html');
+    });
+</script>
+<script type="text/javascript">
+        !function($){
+
+            "use strict";
+
+            var Typed = function(el, options){
+
+        // for variable scope's sake
+        self = this;
+
+        // chosen element to manipulate text
+        self.el = $(el);
+        // options
+        self.options = $.extend({}, $.fn.typed.defaults, options);
+
+        // text content of element
+        self.text = self.el.text();
+
+        // typing speed
+        self.typeSpeed = self.options.typeSpeed;
+
+        // amount of time to wait before backspacing
+        self.backDelay = self.options.backDelay;
+
+        // input strings of text
+        self.strings = self.options.strings;
+
+        // character number position of current string
+        self.strPos = 0;
+
+        // current array position
+        self.arrayPos = 0;
+
+        // current string based on current values[] array position 
+        self.string = self.strings[self.arrayPos];
+
+        // number to stop backspacing on.
+        // default 0, can change depending on how many chars
+        // you want to remove at the time
+        self.stopNum = 0;
+
+        // number in which to stop going through array
+        // set to strings[] array (length - 1) to stop deleting after last string is typed
+        self.stopArray = self.strings.length;
+
+        // All systems go!
+        self.init();
+    }
+
+    Typed.prototype =  {
+
+        constructor: Typed
+
+        , init: function(){
+                // begin the loop w/ first current string (global self.string)
+                // current string will be passed as an argument each time after this
+                self.typewrite(self.string, self.strPos);
+                self.el.after("<span id=\"typed-cursor\">|</span>");
+            }
+
+            // pass current string state to each function
+            , typewrite: function(curString, curStrPos){
+
+                // varying values for setTimeout during typing
+                // can't be global since number changes each time loop is executed
+                var humanize = Math.round(Math.random() * (100 - 30)) + self.typeSpeed;
+
+                // ------ optional ------ //
+                // custom backspace delay
+                // if (self.arrayPos == 1){
+                //  self.backDelay = 50;
+                // }
+                // else{ self.backDelay = 500; }
+
+                // containg entire typing function in a timeout
+                setTimeout(function() {
+
+                    // make sure array position is less than array length
+                    if (self.arrayPos < self.strings.length){
+
+                        // start typing each new char into existing string
+                        // curString is function arg
+                        self.el.text(self.text + curString.substr(0, curStrPos));
+
+                        // check if current character number is the string's length
+                        // and if the current array position is less than the stopping point
+                        // if so, backspace after backDelay setting
+                        if (curStrPos > curString.length && self.arrayPos < self.stopArray){
+                            clearTimeout();
+                            setTimeout(function(){
+                                self.backspace(curString, curStrPos);
+                            }, self.backDelay);
+                        }
+
+                        // else, keep typing
+                        else{
+                            // add characters one by one
+                            curStrPos++;
+                            // loop the function
+                            self.typewrite(curString, curStrPos);
+                            // if the array position is at the stopping position
+                            // finish code, on to next task
+                            // if (self.arrayPos == self.stopArray && curStrPos == curString.length){
+                            //  // animation that occurs on the last typed string
+                            //  // place any finishing code here
+                            //  self.options.callback();
+                            //  clearTimeout();
+                            // }
+                        }
+                    }
+                    else{
+                        self.arrayPos = 0;
+                        self.typewrite(self.string, self.strPos);
+                    }
+
+                // humanized value for typing
+            }, humanize);
+
+            }
+
+            , backspace: function(curString, curStrPos){
+
+                // varying values for setTimeout during typing
+                // can't be global since number changes each time loop is executed
+                var humanize = Math.round(Math.random() * (100 - 30)) + self.typeSpeed;
+
+                setTimeout(function() {
+
+                        // ----- this part is optional ----- //
+                        // check string array position
+                        // on the first string, only delete one word
+                        // the stopNum actually represents the amount of chars to
+                        // keep in the current string. In my case it's 14.
+                        // if (self.arrayPos == 1){
+                        //  self.stopNum = 14;
+                        // }
+                        //every other time, delete the whole typed string
+                        // else{
+                        //  self.stopNum = 0;
+                        // }
+
+                    // ----- continue important stuff ----- //
+                        // replace text with current text + typed characters
+                        self.el.text(self.text + curString.substr(0, curStrPos));
+
+                        // if the number (id of character in current string) is 
+                        // less than the stop number, keep going
+                        if (curStrPos > self.stopNum){
+                            // subtract characters one by one
+                            curStrPos--;
+                            // loop the function
+                            self.backspace(curString, curStrPos);
+                        }
+                        // if the stop number has been reached, increase 
+                        // array position to next string
+                        else if (curStrPos <= self.stopNum){
+                            clearTimeout();
+                            self.arrayPos = self.arrayPos+1;
+                            // must pass new array position in this instance
+                            // instead of using global arrayPos
+                            self.typewrite(self.strings[self.arrayPos], curStrPos);
+                        }
+
+                // humanized value for typing
+            }, humanize);   
+
+            }
+
+        }
+
+        $.fn.typed = function (option) {
+            return this.each(function () {
+              var $this = $(this)
+              , data = $this.data('typed')
+              , options = typeof option == 'object' && option
+              if (!data) $this.data('typed', (data = new Typed(this, options)))
+                  if (typeof option == 'string') data[option]()
+              });
+        }
+
+        $.fn.typed.defaults = {
+            strings: ["These are the default values...", "You know what you should do?", "Use your own!", "Have a great day!"],
+        // typing and backspacing speed
+        typeSpeed: 0,
+        // time before backspacing
+        backDelay: 500,
+        // ending callback function
+        callback: function(){ null }
+    }
+
+
+}(window.jQuery);
+
+
+$(function () {
+
+    $("span.text-change").typed({
+        strings: ["Research Fellow, Philosophy", "A Lifelong Scholar", "A Professor", "A Son", "A Husband", "A Friend", "An Ex-Army Officer", " "],
+                typeSpeed: 30, // typing speed
+                backDelay: 500, // pause before backspacing
+                callback: function () { $(this) }
+            });
+});
+</script>
+</body>
+</html>
